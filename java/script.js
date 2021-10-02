@@ -1,4 +1,4 @@
-// Class Creation
+// Class Creation the Cards
 class Film {
   title;
   description;
@@ -39,7 +39,7 @@ class Film {
   }
 }
 
-//Array Creation
+//Array Creation the Cards
 
 var film1 = new Film(
     "Dune",
@@ -120,4 +120,13 @@ for (let i = 0; i < film.lenght; i++) {
 
 //Sort the Cards (doesn`t work yet)
 
-let filmSort = 
+//By Likes
+function sortFilm() {
+let filmSort = film.sort(film.like);
+for (let val of filmSort) {
+  document.getElementById("filme").innerHTML += val.printInfo();
+}
+}
+
+let s = document.getElementById("sortlikes");
+a.addEventListener("click", sortFilm(), false);
