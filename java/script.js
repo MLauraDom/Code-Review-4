@@ -16,7 +16,7 @@ function print(y) {
       </div>
       <div class="right">
       <p class="myBtn btn btn-primary"><span>&#128077</span> Like</p>
-      <p class="qt">${x.like}</p><p>Likes</p>
+      <p class="qt">${x.like} Likes</p>
       </div>
       </div>
       </div>
@@ -27,7 +27,7 @@ function print(y) {
     let a = y[x].like;
     delete y[x].like;
     a++;
-    document.getElementsByClassName("qt")[x].innerHTML = a;
+    document.getElementsByClassName("qt")[x].innerHTML = a + " Likes";
     y[x].like = a;
   }
 
@@ -55,4 +55,4 @@ function sorted() {
 
 document.getElementById("sortlikes").addEventListener("click", function () {
   sorted();
-}, false);
+});
