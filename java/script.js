@@ -25,6 +25,7 @@ q = [0, 0, 0, 0, 0]
 function likePlus(x) {
   film[x].like += 1;
   document.getElementsByClassName("qt")[x].innerHTML = film[x].like + " Likes";
+  localStorage.removeItem(q[i]);
   localStorage.setItem(q[i], film[x].like);
 }
 
