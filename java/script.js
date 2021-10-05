@@ -1,15 +1,17 @@
 var film = JSON.parse(filme);
 
 function print(y) {
+
   for (let x of y) {
+
     document.getElementById("filme").innerHTML += `<div class="card">
       <div class="row g-0">
       <div class="col">
-      <img src="${x.image}" class="img-fluid rounded-start" alt= ${x.title} ${x.year} / >
+      <img src="${x.image}" class="img-fluid rounded-start" alt= ${x.title} - ${x.year} / >
       </div>
       <div class="col">
       <div class="card-body">
-        <h5 class="card-title">${x.title}</h5>
+        <h5 class="card-title">${x.title} - ${x.year}</h5>
         <p class="card-text">${x.description}</p>
       </div>
       <div class="right">
@@ -22,44 +24,35 @@ function print(y) {
   }
 
   function likePlus(x) {
-    y[x].like++;
-    document.getElementsByClassName("qt")[x].innerHTML = y[x].like;
+    let a = y[x].like;
+    delete y[x].like;
+    a++;
+    document.getElementsByClassName("qt")[x].innerHTML = a;
+    y[x].like = a;
   }
 
   var likebut = document.getElementsByClassName("myBtn");
 
   for (let i = 0; i < likebut.length; i++) {
+    let a = y[i].like;
     likebut[i].addEventListener("click", function () {
       likePlus(i);
     });
   }
+
 }
 
 print(film);
 
-var filmSL = film.sort((a, b) => b.like - a.like);
+var filmS = film.sort((a, b) => b.like - a.like);
 
-console.table(filmSL);
+console.table(filmS);
 
-function sortedL() {
+function sorted() {
   document.getElementById("filme").innerHTML = "";
-  print(filmSL);
+  print(filmS);
 }
 
 document.getElementById("sortlikes").addEventListener("click", function () {
-  sortedL();
-}); 
-
-var filmSY = film.sort((a, b) => b.year - a.year);
-
-console.table(filmSY);
-
-function sortedY() {
-  document.getElementById("filme").innerHTML = "";
-  print(filmSY);
-}
-
-document.getElementById("sortyear").addEventListener("click", function () {
-  sortedY();
-}); 
-
+  sorted();
+}, false);
