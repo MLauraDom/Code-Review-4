@@ -44,15 +44,17 @@ function print(y) {
 
 print(film);
 
+console.table(film);
+
 var filmS = film.sort((a, b) => b.like - a.like);
 
 console.table(filmS);
 
-function sorted() {
+function sort() {
   document.getElementById("filme").innerHTML = "";
-  print(filmS);
+print(filmS);
 }
 
-document.getElementById("sortlikes").addEventListener("click", function () {
-  sorted();
-});
+document.getElementById("sortlikes").addEventListener("click", function() {
+  sort();
+  })
