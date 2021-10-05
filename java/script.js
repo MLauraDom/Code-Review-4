@@ -24,15 +24,27 @@ for (let x of film) {
         <p class="card-text">${x.description}</p>
       </div>
       <div class="right">
-      <p id="${x.id}" class="btn btn-primary"> <span>&#128077</span></p>
-      <p id="${x.lid}">${x.like} Likes</p>
+      <p class="btn btn-primary"> <span>&#128077</span></p>
+      <p class="qt">${x.like} Likes</p>
       </div>
     </div>
   </div>
 </div>`;
 }
 
-//Function Increase Likes (doesn`t work yet)
+function likePlus(x) {
+  film[x].like += 1;
+  getElementByClassName("qt")[x].innerHTML = film[x].like + " Likes";
+}
+
+var likebut = document.getElementsByClassName("btn");
+
+for (let i = 0; i < likebut.lenght; i++) {
+  likebut[i].addEventListener("click", function () {
+    likePlus(i);
+  })
+}
+
 
 
 

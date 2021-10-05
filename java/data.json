@@ -3,47 +3,35 @@ var film = `[{
     "description":"An 2021 American epic space opera film directed by Denis Villeneuve.",
     "year":"2021",
     "like": 0,
-    "image":"img/dune.jpg",
-    "id": 0,
-    "lid": 5
+    "image":"img/dune.jpg"
 },{
     "title":"Free guy",
     "description":"An American SF action comedy film directed by Shawn Levy.",
     "year":"2021",
     "like": 0,
-    "image":"img/freeguy.jpg",
-    "id": 1,
-    "lid": 6
+    "image":"img/freeguy.jpg"
 },{
     "title":"Cry Macho",
     "description":"An American neo-Western drama film directed and produced by Clint Eastwood.",
     "year":"2021",
     "like": 0,
-    "image":"img/crymacho.jpg",
-    "id": 2,
-    "lid": 7
+    "image":"img/crymacho.jpg"
 },{
     "title":"Malignant",
     "description":"An American horror film directed by James Wan from a screenplay by Akela Cooper.",
     "year":"2021",
     "like": 0,
-    "image":"img/malignant.jpg",
-    "id": 3,
-    "lid": 8
+    "image":"img/malignant.jpg"
 },{
     "title":"Old",
     "description":"An American thriller film written, directed, and produced by M. Night Shyamalan.",
     "year":"2021",
     "like": 0,
-    "image":"img/old.jpg",
-    "id": 4,
-    "lid": 9
+    "image":"img/old.jpg"
 },{
     "title":"Finch",
     "description":"An upcoming American post-apocalyptic SF drama film directed by Miguel Sapochnik.",
     "year":"2021",
     "like": 0,
-    "image":"img/dune.jpg",
-    "id": 5,
-    "lid": 10
+    "image":"img/dune.jpg"
 }]`
