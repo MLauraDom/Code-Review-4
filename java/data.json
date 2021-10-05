@@ -15,7 +15,7 @@ var filme = `[{
     "description":"An American neo-Western drama film directed and produced by Clint Eastwood.",
     "year":"2009",
     "image":"img/crymacho.jpg",
-    "like": 0
+    "like": 7
 },{
     "title":"Malignant",
     "description":"An American horror film directed by James Wan from a screenplay by Akela Cooper.",
