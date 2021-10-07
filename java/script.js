@@ -4,13 +4,13 @@ function print() {
 
   for (let x = 0; x < film.length; x++) {
 
-    document.getElementById("filme").innerHTML += `<div class="card">
+    document.getElementById("filme").innerHTML += `<div class="card m-3" style="width:19rem">
       <div class="row g-0">
       <div class="col">
       <img src="${film[x].image}" class="img-fluid rounded-start" alt= ${film[x].title} - ${film[x].year} / >
       </div>
       <div class="col">
-      <div class="card-body">
+      <div class="card-body desc">
         <h5 class="card-title">${film[x].title} ${film[x].year}</h5>
         <p class="card-text">${film[x].description}</p>
       </div>
